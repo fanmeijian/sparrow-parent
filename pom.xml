@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.17</version>
+		<relativePath />
+	</parent>
+
+	<groupId>cn.sparrowmini</groupId>
+	<artifactId>sparrow-parent</artifactId>
+	<version>0.1.0</version>
+	<packaging>pom</packaging>
+	<name>sparrow-parent</name>
+	<description>Sparrow Parent</description>
+	<url>https://www.linkair-tech.cn/projects/sparrow</url>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Sword</name>
+			<email>fanmeijian@aliyun.com</email>
+			<organization>Linkair-Tech, Inc.</organization>
+			<organizationUrl>https://www.linkair-tech.cn</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/sparrow-projects/sparrow</url>
+	</scm>
+	<properties>
+		<hibernate.version>5.6.5.Final</hibernate.version>
+		<hibernate.validator.version>5.4.3.Final</hibernate.validator.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>${hibernate.validator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.sparrowmini</groupId>
+				<artifactId>sparrow-common</artifactId>
+				<version>0.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.sparrowmini</groupId>
+				<artifactId>sparrow-common-api</artifactId>
+				<version>0.2.0</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.sparrowmini</groupId>
+				<artifactId>sparrow-common-restapi</artifactId>
+				<version>0.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>2.0.1.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.12.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-envers</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-jpamodelgen</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>1.7.0</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
