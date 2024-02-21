@@ -33,7 +33,7 @@
 		</developer>
 	</developers>
 	<scm>
-		<url>https://github.com/sparrow-projects/sparrow</url>
+		<url>https://github.com/fanmeijian/sparrow-parent.git</url>
 	</scm>
 	<properties>
 		<hibernate.version>5.6.5.Final</hibernate.version>
