@@ -13,7 +13,7 @@
 
 	<groupId>cn.sparrowmini</groupId>
 	<artifactId>sparrow-parent</artifactId>
-	<version>0.0.1</version>
+	<version>0.1.0</version>
 	<packaging>pom</packaging>
 	<name>sparrow-parent</name>
 	<description>Sparrow Parent</description>
@@ -86,6 +86,16 @@
 				<groupId>org.springdoc</groupId>
 				<artifactId>springdoc-openapi-ui</artifactId>
 				<version>1.7.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jeasy</groupId>
+				<artifactId>easy-rules-core</artifactId>
+				<version>4.1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jeasy</groupId>
+				<artifactId>easy-rules-mvel</artifactId>
+				<version>4.1.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
